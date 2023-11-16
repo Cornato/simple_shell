@@ -34,7 +34,7 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 int change_directory(char *args[], char *argv[],
-char *prev_dir, int error_count);
-int cd_handler(char *args[], char *argv[], int argCount, int error_count);
+char *previously, int error_c);
+int cd_cmd_handler(char *args[], char *argv[], int cmdCount, int error_count);
 
 #endif
