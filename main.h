@@ -17,7 +17,8 @@ extern char **environ;
 
 void current_directory(char *current_dir);
 int isCd(char *argv[], char *args[], int bugCount);
-int change_directory(char *args[], char *argv[], char *prev_dir, int error_count);
+int change_directory(char *args[], char *argv[],
+char *prev_dir, int error_count);
 int handleBuiltInCommands(char *args[], char **env);
 int handleCmd(char *args[], char **env, char *argv[], int cmdCount);
 void setEnvironmentVariable(char *variable, char *value);
@@ -32,7 +33,8 @@ int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
-int change_directory(char *args[], char *argv[], char *prev_dir, int error_count);
+int change_directory(char *args[], char *argv[],
+char *prev_dir, int error_count);
 int cd_handler(char *args[], char *argv[], int argCount, int error_count);
 
 #endif
