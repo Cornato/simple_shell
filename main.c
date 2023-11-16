@@ -128,7 +128,7 @@ int main(int ac, char *argv[])
 		{
 			if (_strcmp(args[0], "cd") == 0)
 			{
-				cd_handler(args, argv, splitCounter, bugCount);
+				cd_cmd_handler(args, argv, splitCounter, bugCount);
 				clearBuffer(args, COMMAND_BYTES);
 				splitCounter = 0;
 				continue;

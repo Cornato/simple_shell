@@ -35,8 +35,8 @@ int change_directory(char *args[], char *argv[], char *previously, int error_c)
 				if (getcwd(current_dir, sizeof(current_dir)) != NULL)
 				{
 					current_directory(current_dir);
+					return (1);
 				}
-				return (1);
 			}
 		}
 		else
@@ -44,8 +44,8 @@ int change_directory(char *args[], char *argv[], char *previously, int error_c)
 			if (getcwd(current_dir, sizeof(current_dir)) != NULL)
 			{
 				current_directory(current_dir);
+				return (1);
 			}
-			return (1);
 		}
 		return (1);
 	}
